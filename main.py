@@ -5,8 +5,11 @@ import scipy.io.wavfile as wav
 
 def main():
     sample_rate = 44100
+    # f is the frequency in hertz
     f = 440
+    # t is time in seconds (can be int or float)
     t = 3
+    # waveform holds the function (this time, sine)
     waveform = np.sin
 
     wavetable_length = 64
