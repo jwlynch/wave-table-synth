@@ -18,7 +18,10 @@ def main():
     for n in range(wavetable_length):
         wave_table[n] = waveform(2.0 * np.pi * n / wavetable_length)
 
-    output = np.zeros((t * sample_rate,))
+    # refactor (t * sample_rate) as number of samples
+    # now t can be fractional, ex. 2.5, 3.5 or
+    # even 0.567, which is 567 milliseconds
+    total_samples = round(t * sample_rate)
 
 if __name__ == '__main__':
     main()
