@@ -23,5 +23,8 @@ def main():
     # even 0.567, which is 567 milliseconds
     total_samples = round(t * sample_rate)
 
+    # make array to hold samples
+    output = np.zeros((total_samples,))
+
 if __name__ == '__main__':
     main()
