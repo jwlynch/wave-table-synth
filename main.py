@@ -27,5 +27,7 @@ def main():
     output = np.zeros((total_samples,))
 
     index = 0
+    indexIncrement = f * wavetable_length / sample_rate
+
 if __name__ == '__main__':
     main()
