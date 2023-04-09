@@ -17,3 +17,7 @@ wf = wave.open(wf_name, 'rb')
 width = wf.getsampwidth()
 channels = wf.getnchannels()
 rate = wf.getframerate()
+
+print(f"wave file '{wf_name}', width {width}, channels {channels}, rate {rate}\n")
+
+wf.close()
