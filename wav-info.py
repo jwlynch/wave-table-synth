@@ -13,3 +13,7 @@ if len(sys.argv) < 2:
 wf_name = sys.argv[1]
 
 wf = wave.open(wf_name, 'rb')
+
+width = wf.getsampwidth()
+channels = wf.getnchannels()
+rate = wf.getframerate()
