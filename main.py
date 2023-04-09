@@ -32,6 +32,9 @@ def main():
     for n in range(output.shape[0]):
         output[n] = wave_table[int(np.floor(index))]
         index += indexIncrement
+        index %= wavetable_length
+
+    wav.write('sin440.wav', 44100, output.astype(np.float32))
 
 if __name__ == '__main__':
     main()
