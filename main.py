@@ -31,6 +31,7 @@ def main():
 
     for n in range(output.shape[0]):
         output[n] = wave_table[int(np.floor(index))]
+        index += indexIncrement
 
 if __name__ == '__main__':
     main()
