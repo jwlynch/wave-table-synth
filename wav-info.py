@@ -11,3 +11,5 @@ if len(sys.argv) < 2:
     sys.exit(-1)
 
 wf_name = sys.argv[1]
+
+wf = wave.open(wf_name, 'rb')
