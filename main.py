@@ -29,5 +29,8 @@ def main():
     index = 0
     indexIncrement = f * wavetable_length / sample_rate
 
+    for n in range(output.shape[0]):
+        pass
+
 if __name__ == '__main__':
     main()
