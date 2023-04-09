@@ -30,7 +30,7 @@ def main():
     indexIncrement = f * wavetable_length / sample_rate
 
     for n in range(output.shape[0]):
-        pass
+        output[n] = wave_table[int(np.floor(index))]
 
 if __name__ == '__main__':
     main()
