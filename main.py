@@ -26,5 +26,6 @@ def main():
     # make array to hold samples
     output = np.zeros((total_samples,))
 
+    index = 0
 if __name__ == '__main__':
     main()
